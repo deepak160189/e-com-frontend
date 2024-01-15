@@ -1,15 +1,10 @@
 import '../styles/globals.css'
-import Example from '../components/header/header'
-
-// function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-
-// export default MyApp
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HeaderAll from '../components/header/header'
 
 function MyApp(){
   return (
-    <Example></Example>
+   <HeaderAll />
   )
 }
 
