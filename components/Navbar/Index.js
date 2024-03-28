@@ -14,10 +14,6 @@ import {
   NavbarText,
 } from 'reactstrap';
 
-import IconWithClickContent from '../Header/Test';
-import NavsWithIcon from './IconNavs';
-
-
 
 function NavbarLinks (args) {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +24,7 @@ function NavbarLinks (args) {
     <div>
       <div>
       <Navbar expand={true} {...args}>
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        {/* <NavbarBrand href="/">reactstrap</NavbarBrand> */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar className='navbar-custom'>
           <Nav className="" navbar>
@@ -53,9 +49,7 @@ function NavbarLinks (args) {
             </UncontrolledDropdown>
           </Nav>
           <NavbarText>Simple Text</NavbarText>          
-        </Collapse>
-        <NavsWithIcon/>
-      <IconWithClickContent/>
+        </Collapse>   
       </Navbar>  
       
       </div>
